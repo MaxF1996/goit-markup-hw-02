@@ -12,8 +12,9 @@
 /* Загальні стилі */
 
 body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--main-font-color);
@@ -51,9 +52,7 @@ body {
   text-decoration: none;
 }
 
-.logo:hover,
 .hero-button:hover,
-.logo:focus,
 .hero-button:focus {
   opacity: 0.75;
 }
@@ -79,6 +78,10 @@ body {
   color: var(--title-font-color);
 }
 
+.header .active-link {
+  color: var(--accent-color);
+}
+
 .header .nav-contact {
   color: inherit;
 }
@@ -92,6 +95,10 @@ body {
 
 /* Хіро */
 
+.hero {
+  background-color: var(--footer-bg-color);
+}
+
 .hero .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -100,8 +107,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 
-  color: #ffffff; /* Не думаю, що колір даного заголовка стосується палітри сайту */
-  background-color: #2f303a; /* Не думаю, що колір даного фону стосується палітри сайту */
+  color: var(--white-color);
 }
 
 .hero-button {
@@ -113,10 +119,7 @@ body {
 
   color: var(--white-color);
   background-color: var(--accent-color);
-  border-color: transparent;
-}
 
-.hero-button:hover {
   cursor: pointer;
 }
 
@@ -126,10 +129,6 @@ body {
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.benefits-list .benefits-description {
-  line-height: 1.71;
 }
 
 /* Що ми робимо */
@@ -149,7 +148,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-align: center;
 }
 
 .team-list .team-name {
@@ -203,7 +201,6 @@ body {
 
 .address-list {
   font-style: normal;
-  line-height: 1.71;
 }
 
 .address-geo {
@@ -218,5 +215,5 @@ body {
 .address-contact:hover,
 .address-geo:focus,
 .address-contact:focus {
-  color: var(--accent-color);
+  color: var(--white-color);
 }
